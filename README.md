@@ -1,2 +1,2 @@
-# plugin
-Plugin Repository
+# WordPress Plugins
+My Development WordPress Plugins Store
