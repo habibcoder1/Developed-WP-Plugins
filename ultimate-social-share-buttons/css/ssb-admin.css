@@ -1,0 +1,451 @@
+/* Social Sharing Button admin Stylesheet */
+
+:root{
+	--ssbPrimaryColor: #48dbfb;
+	--ssbSecondColor: #ccc;
+	--ssbBlackColor: #333;
+	--ssbWhiteColor: #fff;
+}
+.ssbutton-option .mt-15{
+    margin-top: 15px !important;
+}
+.ssbutton-option .mb-0{
+    margin-bottom: 0 !important;
+}
+.ssbutton-option{
+    font-size: 15px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 15px 15px 15px 0;
+}
+.ssbutton-option .container{
+    background-color: var(--ssbWhiteColor);
+	padding: 15px;
+	max-width: 100%;
+	overflow: hidden;
+}
+.ssbutton-option a:hover,
+.ssbutton-option a:focus{
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+    outline: none;
+}
+.ssbutton-option h4{
+	color: var(--ssbBlackColor);
+}
+.ssbutton-option h2.title{
+	font-size: 28px;
+    color: var(--ssbBlackColor);
+    margin: 10px 0 24px;
+    padding: 8px 0 12px 10px;
+    border-left: 4px solid var(--ssbPrimaryColor);
+    border-radius: 5px;
+}
+
+/* Tabs */
+.ssbutton-option ul{
+    list-style: none;
+    -webkit-box-shadow: 0 0 3px var(--ssbSecondColor);
+            box-shadow: 0 0 3px var(--ssbSecondColor);
+    padding: 17px 5px 17px 10px;
+    border-radius: 4px;
+}
+.ssbutton-option ul li{
+    display: inline-block;
+}
+.ssbutton-option ul li:nth-child(2){
+    margin-left: 15px;
+}
+.ssbutton-option ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .8px;
+    padding: 8px 12px;
+    font-weight: bold;
+    color: var(--ssbBlackColor);
+    border-bottom: 3px solid transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.ssbutton-option ul li.ui-tabs-active a{
+    color: var(--ssbPrimaryColor);
+    border-bottom: 3px solid var(--ssbPrimaryColor);
+    position: relative;
+}
+.ssbutton-option ul li.ui-tabs-active a::after {
+    content: '';
+    clear: both;
+    position: absolute;
+    left: 40%;
+    top: 100%;
+    height: 33px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: var(--ssbPrimaryColor) transparent transparent transparent;
+}
+.ssbutton-option .ssbutton-form #setting-form,
+.ssbutton-option .ssbutton-form #icons-form{
+    padding: 10px;
+    -webkit-box-shadow: 0 0 3px var(--ssbSecondColor);
+            box-shadow: 0 0 3px var(--ssbSecondColor);
+    border-radius: 4px;
+}
+
+/* Form Style */
+.ssbutton-option .ssbutton-form{
+    width: 65%;
+    float: left;
+    -webkit-box-shadow: 0 0 5px var(--ssbSecondColor);
+            box-shadow: 0 0 5px var(--ssbSecondColor);
+    padding: 8px 12px 15px 12px;
+    border-radius: 4px;
+}
+.ssbutton-option .ssbutton-form form label{
+    text-transform: capitalize;
+	color: var(--ssbBlackColor);
+	font-size: 15px;
+	font-weight: bold;
+	display: block;
+}
+.ssbutton-option .ssbutton-form form label.radio-label {
+    display: inline-block;
+    margin-right: 5px;
+}
+.ssbutton-option .ssbutton-form #icons-form form label{
+    display: inline-block;
+    margin: 5px 20px 13px 0;
+}
+.ssbutton-option .ssbutton-form #icons-form form small{
+    display: block;
+}
+.ssbutton-option .ssbutton-form form small{
+	font-style: italic;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.ssbutton-option .ssbutton-form form select,
+.ssbutton-option .ssbutton-form form input[type="color"],
+.ssbutton-option .ssbutton-form form input[type="text"]{
+	width: 90%;
+	color: var(--ssbBlackColor);
+	font-size: 15px;
+	padding: 7px 10px;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	-webkit-box-shadow: 0 0 5px var(--ssbSecondColor);
+	        box-shadow: 0 0 5px var(--ssbSecondColor);
+	margin-bottom: 15px;
+	display: block;
+	-webkit-transition: .3s ease all;
+	-o-transition: .3s ease all;
+	transition: .3s ease all;
+}
+.ssbutton-option .ssbutton-form form input[type="radio"]{
+	padding: 7px 10px;
+	border-radius: 4px;
+    margin: 1px 10px 0 0;
+	border: none;
+	outline: none;
+	-webkit-box-shadow: 0 0 5px var(--ssbSecondColor);
+	        box-shadow: 0 0 5px var(--ssbSecondColor);
+	display: inline-block;
+	-webkit-transition: .3s ease all;
+	-o-transition: .3s ease all;
+	transition: .3s ease all;
+}
+.ssbutton-option .ssbutton-form form input:focus{
+	-webkit-box-shadow: 0 0 8px var(--ssbSecondColor);
+	        box-shadow: 0 0 8px var(--ssbSecondColor);
+}
+.ssbutton-option .ssbutton-form form input[type="color"]{
+	width: 110px;
+	height: 95px;
+	cursor: pointer;
+}
+.ssbutton-option .ssbutton-form form input[type=radio]:checked::before{
+	background-color: var(--ssbPrimaryColor);
+	margin: 4px;
+}
+.ssbutton-option .ssbutton-form form input[type="submit"]{
+	color: var(--ssbWhiteColor);
+    cursor: pointer;
+    background: var(--ssbPrimaryColor);
+    padding: 8px 25px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .8px;
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+}
+.ssbutton-option .ssbutton-form form input[type="submit"]:hover{
+	background: var(--ssbWhiteColor);
+	border: 2px solid var(--ssbPrimaryColor);
+	color: var(--ssbPrimaryColor);
+}
+.ssbutton-option .ssbutton-form form ::-webkit-input-placeholder{
+	text-transform: capitalize;
+	color: var(--ssbBlackColor);
+    font-size: 14px;
+	font-style: italic;
+	opacity: .8;
+}
+.ssbutton-option .ssbutton-form form ::-moz-placeholder{
+	text-transform: capitalize;
+	color: var(--ssbBlackColor);
+    font-size: 14px;
+	font-style: italic;
+	opacity: .8;
+}
+.ssbutton-option .ssbutton-form form :-ms-input-placeholder{
+	text-transform: capitalize;
+	color: var(--ssbBlackColor);
+    font-size: 14px;
+	font-style: italic;
+	opacity: .8;
+}
+.ssbutton-option .ssbutton-form form ::-ms-input-placeholder{
+	text-transform: capitalize;
+	color: var(--ssbBlackColor);
+    font-size: 14px;
+	font-style: italic;
+	opacity: .8;
+}
+.ssbutton-option .ssbutton-form form ::placeholder{
+	text-transform: capitalize;
+	color: var(--ssbBlackColor);
+    font-size: 14px;
+	font-style: italic;
+	opacity: .8;
+}
+.ssbutton-option #social-style .sslink-right label,
+.ssbutton-option #social-style .sslink-left label,
+.ssbutton-option #social-style .sslink-bottom label{
+	display: inline-block;
+	margin-left: 4px;
+}
+.ssbutton-option #social-style .sslink-bottom{
+	margin-bottom: 8px;
+}
+.ssbutton-option #social-style p.sslink-postion-p{
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+.ssbutton-option #social-style small{
+	margin: 0 0 10px 0;
+}
+
+/* Author Style */
+.ssbutton-option .ssbutton-author{
+    width: 29%;
+    float: right;
+    -webkit-box-shadow: 0 0 5px var(--ssbSecondColor);
+            box-shadow: 0 0 5px var(--ssbSecondColor);
+    padding: 8px 12px 15px 12px;
+    border-radius: 4px;
+}
+.ssbutton-option .ssbutton-author img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    border: 3px solid var(--ssbPrimaryColor);
+}
+.ssbutton-option .ssbutton-author h4.author-name {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 25px 5px 18px;
+}
+.ssbutton-option .ssbutton-author p{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+.ssbutton-option .ssbutton-author .donate-btn a{
+    text-decoration: none;
+}
+.ssbutton-option .ssbutton-author .donate-btn a h4{
+    padding: 8px 10px 10px;
+    text-align: center;
+    background: var(--ssbPrimaryColor);
+    color: var(--ssbWhiteColor);
+    font-size: 23px;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+}
+.ssbutton-option .ssbutton-author .donate-btn a h4:hover{
+    color: var(--ssbSecondColor);
+}
+.ssbutton-option .ssbutton-author .donate-btn a h4 span{
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.ssbutton-option .ssbutton-author h3.social-title{
+    margin: 20px 0;
+    font-size: 20px;
+    border-left: 4px solid var(--ssbPrimaryColor);
+    height: 24px;
+    padding: 5px 0 0 8px;
+    border-radius: 5px;
+}
+.ssbutton-option .ssbutton-author .social-icons{
+    text-align: center;
+}
+.ssbutton-option .ssbutton-author .social-icons a{
+    text-decoration: none;
+    margin-right: 6px;
+    display: inline-block;
+}
+.ssbutton-option .ssbutton-author .social-icons a img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--ssbPrimaryColor);
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    transition: .3s ease all;
+}
+.ssbutton-option .ssbutton-author .social-icons a img:hover{
+    background-color: var(--ssbSecondColor);
+}
+.ssbutton-option .ssbutton-author .thank-you{
+    text-align: center;
+    margin: 35px 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.ssbutton-option .ssbutton-author .thank-you span{
+    display: inline-block;
+    font-size: 35px;
+    color: red;
+}
+.ssbutton-option .ssbutton-author .thank-you h5{
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Author Responsive */
+@media only screen and (max-width: 550px){
+    .ssbutton-option .ssbutton-author .donate-btn a h4{
+        font-size: 20px;
+        line-height: 1.2em;
+        text-align: left;
+    }
+    .ssbutton-option .ssbutton-author .social-icons a img{
+        height: 36px;
+        width: 36px;
+    }
+}
+
+/* Author Responsive */
+@media only screen and (min-width: 1050px) and (max-width: 1200px){
+    .ssbutton-option .ssbutton-author{
+		width: 28%
+	}
+    
+}
+@media only screen and (min-width: 900px) and (max-width: 1050px){
+    .ssbutton-option .ssbutton-author{
+		width: 27%
+	}
+}
+@media only screen and (max-width: 900px){
+	.ssbutton-option .ssbutton-form{
+		width: 95%;
+		float: none;
+	}
+    .ssbutton-option .ssbutton-author{
+		width: 60%;
+		float: none;
+		margin: 25px auto 20px auto;
+	}   
+}
+@media only screen and (max-width: 1150px){
+    .ssbutton-option .ssbutton-author .donate-btn a h4{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 782px){
+    .ssbutton-option .ssbutton-author .donate-btn a h4{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 781.99px){
+    .ssbutton-option .ssbutton-author .donate-btn a h4{
+        font-size: 17px;
+    }
+    .ssbutton-option  .ssbutton-form form input[type="radio"]{
+        height: 17px;
+        width: 17px;
+    }
+}
+@media only screen and (max-width: 550px){
+	.ssbutton-option .ssbutton-form{
+		width: 93%;
+	}
+    .ssbutton-option .ssbutton-author{
+        width: 80%;
+    }
+    .ssbutton-option .ssbutton-author .donate-btn a h4{
+        font-size: 16px;
+        line-height: 1.2em;
+        text-align: left;
+    }
+    .ssbutton-option .ssbutton-author .social-icons a img{
+        height: 36px;
+        width: 36px;
+    }
+    .ssbutton-option .ssbutton-author h4.author-name{
+        font-size: 16px;
+        padding: 32px;
+    }
+    .ssbutton-option .sslink-title h2{
+        line-height: 1.5em;
+        padding: 2px 0 7px 10px;
+    }
+    .ssbutton-option ul li:nth-child(2){
+        margin-left: 5px;
+    }
+}
+@media only screen and (max-width: 348px){
+    .ssbutton-option ul li:nth-child(2){
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    
+}
+
+.ssbutton-option .ssb_show{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
