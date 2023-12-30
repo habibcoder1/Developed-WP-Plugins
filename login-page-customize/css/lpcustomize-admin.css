@@ -1,0 +1,501 @@
+/**
+*  @package  Login Page Customize
+*
+*  Login Page Customize admin Stylesheet  
+**/
+
+:root{
+    --LpcPrimaryColor: #ff7979 ;
+    --LpcSecondaryColor: #ccc;
+    --LpcWhiteColor: #fff;
+    --LpcBlackColor: #333;
+}
+.lpcustomize-option h1,
+.lpcustomize-option h2,
+.lpcustomize-option h3,
+.lpcustomize-option h4,
+.lpcustomize-option h5,
+.lpcustomize-option h6{
+    color: var(--LpcBlackColor);
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.lpcustomize-option h1{
+    font-size: 38px;
+}
+.lpcustomize-option h2{
+    font-size: 32px;
+}
+.lpcustomize-option h3{
+    font-size: 28px;
+}
+.lpcustomize-option h4{
+    font-size: 26px;
+}
+.lpcustomize-option h5{
+    font-size: 22px;
+}
+.lpcustomize-option h6{
+    font-size: 20px;
+}
+.lpcustomize-option p{
+    font-size: 15px;
+}
+.lpcustomize-option a:focus,
+.lpcustomize-option a:hover{
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    outline: none;
+}
+.lpcustomize-option{
+    font-size: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 20px 20px 20px 0;
+}
+.lpcustomize-option .container{
+    background-color: var(--LpcWhiteColor);
+    padding: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.lpcustomize-option .container .lpcustomize-form{
+    width: 63%;
+    float: left;
+    -webkit-box-shadow: 0 0 10px var(--LpcSecondaryColor);
+            box-shadow: 0 0 10px var(--LpcSecondaryColor);
+    padding: 14px;
+    border-radius: 5px;
+}
+.lpcustomize-option .container .lpcustomize-author{
+    width: 30%;
+    float: right;
+    -webkit-box-shadow: 0 0 10px var(--LpcSecondaryColor);
+            box-shadow: 0 0 10px var(--LpcSecondaryColor);
+    padding: 14px;
+    border-radius: 5px;
+}
+.lpcustomize-option .container h2.lpcustomize-title{
+    border-left: 4px solid var(--LpcPrimaryColor);
+    padding: 10px 10px 15px;
+    border-radius: 5px;
+}
+
+/* Tab Style */
+.lpcustomize-option #lpcustomize-tab .lpctab-items ul{
+    list-style: none;    
+    -webkit-box-shadow: 0 0 3px var(--LpcSecondaryColor);    
+            box-shadow: 0 0 3px var(--LpcSecondaryColor);
+    padding: 15px 0 15px 5px;
+    border-radius: 5px;
+}
+.lpcustomize-option #lpcustomize-tab .lpctab-items ul li{
+    display: inline-block;
+}
+.lpcustomize-option #lpcustomize-tab .lpctab-items ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--LpcBlackColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 5px;
+    letter-spacing: .1px;
+}
+.lpcustomize-option #lpcustomize-tab .lpctab-items ul li.ui-tabs-active a{
+    color: var(--LpcPrimaryColor);
+    border-bottom: 3px solid var(--LpcPrimaryColor);
+    position: relative;
+}
+.lpcustomize-option #setting-form[aria-hidden="false"],
+.lpcustomize-option #register-form[aria-hidden="false"],
+.lpcustomize-option #login-form[aria-hidden="false"]{
+    -webkit-box-shadow: 0 0 3px var(--LpcSecondaryColor);
+            box-shadow: 0 0 3px var(--LpcSecondaryColor);
+    padding: 8px;
+    border-radius: 5px;
+}
+.lpcustomize-option #lpcustomize-tab .lpctab-items ul li.ui-tabs-active a::after {
+    content: '';
+    clear: both;
+    position: absolute;
+    left: 40%;
+    top: 100%;
+    height: 33px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: var(--LpcPrimaryColor) transparent transparent transparent;
+}
+
+/* Form Style */
+.lpcustomize-option .container .lpcustomize-form form{
+    margin-top: 12px;
+}
+.lpcustomize-option .container .lpcustomize-form form label{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--LpcBlackColor);
+    text-transform: capitalize;
+    display: block;
+}
+.lpcustomize-option .container .lpcustomize-form form .lpc-bgimage,
+.lpcustomize-option .container .lpcustomize-form form .lpc-logoimage{
+    display: block;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.lpcustomize-option .container .lpcustomize-form form .lpc-bgimage{
+    width: 140px;
+    height: 125px;
+}
+.lpcustomize-option .container .lpcustomize-form form .lpc-logoimage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.lpcustomize-option .container .lpcustomize-form form label.logo-img{
+    margin-top: 12px;
+}
+.lpcustomize-option .container .lpcustomize-form form small{
+    font-style: italic;
+    color: var(--LpcBlackColor);
+    opacity: .8;
+    display: block;
+    margin: 3px 0 8px 0;
+}
+.lpcustomize-option .container .lpcustomize-form form label small{
+    font-weight: normal;
+    text-transform: initial;
+}
+.lpcustomize-option .container .lpcustomize-form form select,
+.lpcustomize-option .container .lpcustomize-form form textarea,
+.lpcustomize-option .container .lpcustomize-form form input[type="color"],
+.lpcustomize-option .container .lpcustomize-form form input[type="text"]{
+    font-size: 15px;
+    padding: 6px 10px;
+    width: 100%;
+    margin-bottom: 12px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 5px var(--LpcSecondaryColor);
+            box-shadow: 0 0 5px var(--LpcSecondaryColor);
+    display: block;
+}
+.lpcustomize-option .container .lpcustomize-form form select:focus,
+.lpcustomize-option .container .lpcustomize-form form textarea:focus,
+.lpcustomize-option .container .lpcustomize-form form input[type="color"]:focus,
+.lpcustomize-option .container .lpcustomize-form form input[type="text"]:focus{
+    -webkit-box-shadow: 0 0 7px var(--LpcSecondaryColor);
+            box-shadow: 0 0 7px var(--LpcSecondaryColor);
+}
+.lpcustomize-option .container .lpcustomize-form form input[type="color"]{
+    width: 120px;
+    height: 95px;
+    cursor: pointer;
+}
+.lpcustomize-option .container .lpcustomize-form form input[type="submit"]{
+    color: var(--LpcPrimaryColor);
+    background-color: var(--LpcWhiteColor);
+    text-transform: uppercase;
+    padding: 10px 35px;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    letter-spacing: .2px;
+    outline: none;
+    border: 2px solid var(--LpcPrimaryColor);
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    cursor: pointer;
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+}
+.lpcustomize-option .container .lpcustomize-form form input[type="submit"]:hover{
+    color: var(--LpcWhiteColor);
+    background-color: var(--LpcPrimaryColor);
+    border: 2px solid var(--LpcPrimaryColor);
+}
+.lpcustomize-option .container .lpcustomize-form form input::-webkit-input-placeholder{
+    text-transform: capitalize;
+    font-style: italic;
+    opacity: .8;
+}
+.lpcustomize-option .container .lpcustomize-form form input::-moz-placeholder{
+    text-transform: capitalize;
+    font-style: italic;
+    opacity: .8;
+}
+.lpcustomize-option .container .lpcustomize-form form input:-ms-input-placeholder{
+    text-transform: capitalize;
+    font-style: italic;
+    opacity: .8;
+}
+.lpcustomize-option .container .lpcustomize-form form input::-ms-input-placeholder{
+    text-transform: capitalize;
+    font-style: italic;
+    opacity: .8;
+}
+.lpcustomize-option .container .lpcustomize-form form input::placeholder{
+    text-transform: capitalize;
+    font-style: italic;
+    opacity: .8;
+}
+
+
+.lpcustomize-option .container .logo-section,
+.lpcustomize-option .container .bgimg-section{
+    overflow: hidden;
+    width: 100%;
+}
+.lpcustomize-option .container .logo-section {
+    margin-bottom: 10px;
+}
+.lpcustomize-option .container .logo-section .buttons,
+.lpcustomize-option .container .bgimg-section .buttons{
+    width: 50%;
+    float: left;
+}
+.lpcustomize-option .container .bgimg-section .buttons{
+    margin-top: 12px;
+}
+.lpcustomize-option .container .logo-section .image,
+.lpcustomize-option .container .bgimg-section .image{
+    width: 50%;
+    float: right;
+    overflow: hidden;
+}
+.lpcustomize-option .container .logo-section .buttons input,
+.lpcustomize-option .container .bgimg-section .buttons input{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 16px 0;
+    padding: 5px 15px;
+    border: 1px solid var(--LpcPrimaryColor);
+    cursor: pointer;
+    display: block;
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+}
+.lpcustomize-option .container .logo-section .buttons input:hover,
+.lpcustomize-option .container .bgimg-section .buttons input:hover{
+    background-color: var(--LpcSecondaryColor);
+}
+
+/* Responsive CSS */
+@media only screen and (min-width: 1050px) and (max-width: 1200px){
+    .lpcustomize-option .container .lpcustomize-form{
+        width: 61%
+    }
+}
+@media only screen and (min-width: 960px) and (max-width: 1049.99px){
+    .lpcustomize-option .container .lpcustomize-form{
+        width: 60%
+    }
+    .lpcustomize-option h2{
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 959.99px){
+    .lpcustomize-option .container .lpcustomize-form{
+        width: 60%
+    }
+    .lpcustomize-option .container .lpcustomize-form form .lpc-bgimage, .lpcustomize-option .container .lpcustomize-form form .lpc-logoimage{
+        margin: 5px auto;
+    }
+    .lpcustomize-option h2 {
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width: 767.99px){
+    .lpcustomize-option .container .lpcustomize-form{
+        width: 95%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .lpcustomize-option .container .lpcustomize-author{
+        width: 55%;
+        float: none;
+        margin: auto;
+    }
+    .lpcustomize-option .container .lpcustomize-form form .lpc-bgimage, .lpcustomize-option .container .lpcustomize-form form .lpc-logoimage{
+        margin: 5px auto;
+    }
+}
+@media only screen and (max-width: 550px){
+    .lpcustomize-option .container .lpcustomize-form{
+        width: 93%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .lpcustomize-option .container .lpcustomize-author{
+        width: 75%;
+        float: none;
+        margin: auto;
+    }
+    .lpcustomize-option #lpcustomize-tab .lpctab-items ul li.ui-tabs-active a{
+        color: var(--LpcPrimaryColor);
+    }
+    .lpcustomize-option .container .lpcustomize-form form .lpc-bgimage, .lpcustomize-option .container .lpcustomize-form form .lpc-logoimage{
+        margin: 5px auto;
+    }
+    .lpcustomize-option h2{
+        font-size: 25px;
+        line-height: 1.2em;
+    }
+    .lpcustomize-option h3{
+        font-size: 22px;
+    }
+    .lpcustomize-option #lpcustomize-tab .lpctab-items ul{
+        padding: 10px 0 10px 5px;
+    }
+    .lpcustomize-option #lpcustomize-tab .lpctab-items ul li a{
+        line-height: 2.5em;
+    }
+
+}
+@media only screen and (max-width: 450px){
+    .lpcustomize-option .container .lpcustomize-form{
+        width: 92%;
+    }
+    .lpcustomize-option .container .logo-section .buttons, .lpcustomize-option .container .bgimg-section .buttons{
+        width: 100%;
+        float: none;
+    }
+    .lpcustomize-option .container .logo-section .image, .lpcustomize-option .container .bgimg-section .image{
+        width: 100%;
+        float: none;
+    }
+    .lpcustomize-option .container .logo-section .buttons input, .lpcustomize-option .container .bgimg-section .buttons input{
+        margin: 16px auto;
+    }
+    .lpcustomize-option .container .lpcustomize-form form input[type="submit"]{
+        padding: 9px 30px;
+    }
+}
+
+
+/* Author CSS */
+.lpcustomize-option .container .lpcustomize-author img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    border: 3px solid var(--LpcPrimaryColor);
+}
+.lpcustomize-option .container .lpcustomize-author h4.author-name {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 25px 5px 18px;
+}
+.lpcustomize-option .container .lpcustomize-author p{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+.lpcustomize-option .container .lpcustomize-author .donate-btn a{
+    text-decoration: none;
+}
+.lpcustomize-option .container .lpcustomize-author .donate-btn a h4{
+    padding: 8px 10px 10px;
+    text-align: center;
+    background: var(--LpcPrimaryColor);
+    color: var(--LpcWhiteColor);
+    font-size: 23px;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+}
+.lpcustomize-option .container .lpcustomize-author .donate-btn a h4:hover{
+    color: var(--LpcSecondaryColor);
+}
+.lpcustomize-option .container .lpcustomize-author .donate-btn a h4 span{
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.lpcustomize-option .container .lpcustomize-author h3.rcdfors-social-title{
+    margin: 20px 0;
+    font-size: 20px;
+    border-left: 4px solid var(--LpcPrimaryColor);
+    height: 24px;
+    padding: 5px 0 0 8px;
+    border-radius: 5px;
+}
+.lpcustomize-option .container .lpcustomize-author .social-icons{
+    text-align: center;
+}
+.lpcustomize-option .container .lpcustomize-author .social-icons a{
+    text-decoration: none;
+    margin-right: 6px;
+    display: inline-block;
+}
+.lpcustomize-option .container .lpcustomize-author .social-icons a img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--LpcPrimaryColor);
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    transition: .3s ease all;
+}
+.lpcustomize-option .container .lpcustomize-author .social-icons a img:hover{
+    background-color: var(--LpcSecondaryColor);
+}
+.lpcustomize-option .container .lpcustomize-author .thank-you{
+    text-align: center;
+    margin: 35px 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.lpcustomize-option .container .lpcustomize-author .thank-you span{
+    display: inline-block;
+    font-size: 35px;
+    color: red;
+}
+.lpcustomize-option .container .lpcustomize-author .thank-you h5{
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Author Responsive */
+@media only screen and (max-width: 550px){
+    .lpcustomize-option .container .lpcustomize-author .donate-btn a h4{
+        font-size: 20px;
+        line-height: 1.2em;
+        text-align: left;
+    }
+    .lpcustomize-option .container .lpcustomize-author .social-icons a img{
+        height: 36px;
+        width: 36px;
+    }
+}
