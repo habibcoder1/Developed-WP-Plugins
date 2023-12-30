@@ -1,0 +1,186 @@
+/**
+* @package Login Page Customize
+*
+*   Login Page Customize Stylesheet
+**/
+
+/* Variable */
+:root{
+    --LpcPrimaryColor: #ff7979;
+    --LpcSecondaryColor: #ccc;
+    --LpcWhiteColor: #fff;
+    --LpcBlackColor: #000;
+}
+
+/* Login Stylesheet */
+body.login{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+body.login #login{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--LpcBlackColor);
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+}
+body.login #login h1 a{
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+body.login #login a:active,
+body.login #login a:hover,
+body.login #login a:focus{
+    color: var(--LpcBlackColor);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+body.login #login form{
+    background: none;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 5px 20px 8px;
+    margin-top: 10px;
+}
+body.login #login form input[type="text"],
+body.login #login form input[type="email"],
+body.login #login form input[type="password"]{
+    border: none;
+    border-left: 4px solid var(--LpcPrimaryColor);
+    outline: none;
+    -webkit-box-shadow: 0 0 2px var(--LpcSecondaryColor);
+            box-shadow: 0 0 2px var(--LpcSecondaryColor);
+}
+body.login #login form input[type="text"]:focus,
+body.login #login form input[type="email"]:focus,
+body.login #login form input[type="password"]:focus{
+    border: none;
+    border-left: 4px solid var(--LpcPrimaryColor);
+    -webkit-box-shadow: 0 0 3px var(--LpcSecondaryColor);
+            box-shadow: 0 0 3px var(--LpcSecondaryColor);
+}
+body.login #login form input[type=checkbox], 
+body.login #login form input[type=radio]{
+    border: 1px solid var(--LpcSecondaryColor);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+body.login #login form input[type="submit"]{
+    text-transform: capitalize;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    color: var(--LpcWhiteColor);
+    background: var(--LpcPrimaryColor);
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+    display: block;
+}
+body.login #login form input[type="submit"]:hover{
+    background-color: var(--LpcSecondaryColor);
+    color: var(--LpcPrimaryColor);
+}
+body.login #login form input[type="submit"]:active{
+    border: none;
+    background-color: var(--LpcPrimaryColor);
+}
+body.login-action-register #login .notice.notice-info.message.register,
+body.login-action-lostpassword #login .notice.notice-info.message {
+    border-left: 4px solid var(--LpcPrimaryColor);
+    margin: 5px 20px 8px;
+}
+body.login #login .button.wp-hide-pw:focus{
+    color: var(--LpcSecondaryColor);
+    border-color: var(--LpcSecondaryColor);
+    -webkit-box-shadow: 0 0 0 1px var(--LpcSecondaryColor);
+            box-shadow: 0 0 0 1px var(--LpcSecondaryColor);
+}
+.wp-core-ui .button, 
+.wp-core-ui .button-secondary{
+    color: var(--LpcPrimaryColor);
+}
+.wp-core-ui .button:hover, 
+.wp-core-ui .button-secondary:hover{
+    color: var(--LpcSecondaryColor);
+}
+body.login #login #backtoblog,
+body.login #login #nav{
+    margin: 10px 0 0;
+    text-align: center;
+}
+body.login #login #nav{
+    margin-top: 5px;
+}
+body.login #login #backtoblog a,
+body.login #login #nav a{
+    color: var(--LpcBlackColor);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+body.login #login .privacy-policy-page-link a:hover,
+body.login #login #nav a:hover{
+    color: var(--LpcPrimaryColor);
+}
+body.login #login #backtoblog a{
+    background-color: var(--LpcPrimaryColor);
+    color: var(--LpcWhiteColor);
+    padding: 3px 10px 6px;
+    font-size: 15px;
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+}
+body.login #login #backtoblog a:hover{
+    background-color: var(--LpcSecondaryColor);
+    color: var(--LpcPrimaryColor);
+}
+body.login #login #nav a{
+    font-size: 15px;
+}
+body.login #login .privacy-policy-page-link{
+    text-align: right;
+    margin: 1.5em -1.5em 0;
+}
+body.login #login .privacy-policy-page-link a{
+    font-size: 15px;
+    color: var(--LpcBlackColor);
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+}
+body.login #login #login_error{
+    border-left-color: var(--LpcPrimaryColor);
+    border-radius: 3px;
+    width: 78%;
+    margin: auto;
+}
+body.login #login #login-message{
+    border-left: 4px solid var(--LpcPrimaryColor);
+    border-radius: 4px;
+    width: 78%;
+    margin: auto;
+}
+body.login #login p.message,
+body.login #login p.message.register {
+    border-left: 4px solid var(--LpcPrimaryColor);
+    width: 78%;
+    margin: auto;
+    border-radius: 4px;
+}
+
